@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <script src="shoppingpage.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+/* .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+} */
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+th.addtocartt {
+    text-align:right;
+  width: 90%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#111;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(100, 160, 230);
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.qty{
+  width: 25%;
+  text-align: center;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+.cartt{
+  position: absolute;
+  left:90%;
+ 
+  }
+
+
+  .loginn{
+    position: absolute;
+    left:83%;
+  }
+</style>
+<body>
+        <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="vendorsadd">Add Vendors</a></li>
+                <li><a href="vendorsadd/productsadd">Add Product</a></li>
+                <li class="loginn"><a href="vendorsadd/productsadd"> LOGIN <i class="fas fa-sign-in-alt"></i></a></li>
+
+                <li class="cartt"><a href="cart">Cart  <i class="fas fa-shopping-cart"></i></h4></a></li>
+               
+              </ul>
+<h3><b>Big Trillion Sale</b></h3>
+
+<div>
+  <form >
+    <div  id="productList">
+
+        <div class="card-deck">
+            
+      
+    <!-- <div class="caption">  <h2 >
+      <ul>
+        
+      </ul> -->
+        </h2></div>
+     <!-- <ul >
+      <li>sample data</li>
+    </ul>  -->
+    <script src="shoppingpage.js"></script>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+

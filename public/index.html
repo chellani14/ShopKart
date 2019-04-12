@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <script src="products.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    background-color: rgb(171, 179, 174)
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: rgb(106, 155, 126);
+}
+
+th[scope="row"] {
+    background-color: rgb(106, 155, 126);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 8px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.delb{
+  
+  
+  
+  
+  text-align: center;
+  
+  
+  font-size: 2px;
+}
+
+</style>
+<body>
+
+<h3>Adding Product</h3>
+
+<div>
+  <form >
+    <label for="fname">Product name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="price">Product price</label>
+    <input type="text" id="price" name="price" placeholder="Enter price">
+
+    <label for="Quantity">Quantity</label>
+    <select id="Quantity" name="Quantity">
+        <option value=1>1</option> 
+        <option value=2>2</option> 
+      </select>
+
+    <label for="vendor">vendor</label>
+    <select id="vendor" name="vendor">
+     
+    </select>
+  
+    <button id="addproduct"  class="btn btn-primary" onclick="add()"> Add Product </button>
+    
+
+    
+      
+      
+    <h1 style="text-align:center;">ALL PRODUCTS</h1>
+  
+    <ul style="list-style-type:none;" id="productList">
+       
+       <li>sample data</li>
+    </ul>
+   
+    <script src="products.js"></script>
+  </form>
+</div>
+
+</body>
+</html>
