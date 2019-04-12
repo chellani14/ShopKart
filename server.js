@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({
   extended: true
 }))
-
+//server.js
 app.use('/vendorsadd/productsadd',
   express.static(__dirname + '/public')
 )
