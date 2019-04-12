@@ -12,6 +12,7 @@ app.use(express.urlencoded({
   extended: true
 }))
 //server.js
+const SERVER_PORT = process.env.PORT || 9090 
 app.use('/vendorsadd/productsadd',
   express.static(__dirname + '/public')
 )
@@ -168,6 +169,11 @@ app.delete('/cartPlace/:id', async (req, res) => {
 
 
 db.sync()
-  .then(() => {
-    app.listen(8989)
-  })
+.then(() => {
+console.log("Database have been synced")
+app.listen(SERVER_PORT, function () {
+      console.log("Server started on http://localhost:3333");
+});
+}
+)
+    .catch((err) => console.error(err)) 
